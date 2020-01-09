@@ -348,11 +348,6 @@ for epoch in range(args.start_epoch, args.train_epoch):
     logger.scalar_summary('loss_G_seg', torch.mean(torch.FloatTensor(G_Seg_losses)), epoch + 1)
     logger.scalar_summary('loss_D', torch.mean(torch.FloatTensor(D_losses)), epoch + 1)
 
-    print(
-        '[%d/%d] - time: %.2f, G_loss: %.3f, G_identity_loss: %.3f, G_GAN_loss: %.3f, G_cycle_loss: %.3f, D_loss: %.3f' % (
-        (epoch + 1), args.train_epoch, per_epoch_time, torch.mean(torch.FloatTensor(G_losses)), torch.mean(torch.FloatTensor(G_identity_losses)),
-        torch.mean(torch.FloatTensor(G_GAN_losses)), torch.mean(torch.FloatTensor(G_cycle_losses)), torch.mean(torch.FloatTensor(D_losses))))
-
     with torch.no_grad():
         A2BG.eval()
         for n, (image, _) in enumerate(test_loader_src):
