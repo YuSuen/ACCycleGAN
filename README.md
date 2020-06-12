@@ -1,2 +1,2 @@
 # ACCycleGAN
-This is the PyTorch version repo for Semantic Guidance Based Cycle-Consistent Adversarial Automatic Colorization Network.
+This is the PyTorch version repo for Semantic-aware Automatic Image Colorization via Upaired Cycle-Consistent Adversarial Network.
