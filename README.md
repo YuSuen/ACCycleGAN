@@ -31,3 +31,21 @@ python colorization.py
 ```
 python test.py
 ```
+
+## Reference
+If you find the code useful, please cite:
+```
+@article{https://doi.org/10.1002/int.22667,
+author = {Xiao, Yuxuan and Jiang, Aiwen and Liu, Changhong and Wang, Mingwen},
+title = {Semantic-aware automatic image colorization via unpaired cycle-consistent self-supervised network},
+journal = {International Journal of Intelligent Systems},
+volume = {37},
+number = {2},
+pages = {1222-1238},
+keywords = {CycleGAN, image colorization, image editing, unpaired training, unsupervised learning},
+doi = {https://doi.org/10.1002/int.22667},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/int.22667},
+eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/int.22667},
+year = {2022}
+}
+  ```
